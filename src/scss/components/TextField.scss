@@ -1,0 +1,67 @@
+@import '../Theme.scss';
+@import '../Colors.scss';
+
+.text-field-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-field-label {
+    margin: 0 0 16px;
+    font-size: $font-size-desktop;
+    font-weight: bold;
+    color: $text-primary
+}
+
+.text-field {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 27px 20px 27px 70px;
+    font-size: $font-size-desktop;
+    font-weight: 300;
+    color: $secondary-color;
+    border: 2px solid $secondary-color;
+    border-radius: $border-radius;
+    outline: none;
+
+    &:focus {
+        border-radius: $border-radius;
+        border: 2.5px solid $primary-bg-color;
+    }
+}
+
+.text-field-wrapper {
+    position: relative;
+}
+
+.text-field-icon {
+    position: absolute;
+    bottom: 26px;
+    left: 20px;
+    font-size: 35px;
+    color: $secondary-color
+}
+
+.text-field:focus+.text-field-icon {
+    color: $primary-bg-color !important;
+}
+
+@media (max-width: 1024px) {
+    .text-field-label {
+        margin: 0 0 8px;
+        font-size: $font-size-mobile;
+    }
+
+    .text-field {
+        width: 100%;
+        padding: 13px 5px 13px 46px;
+        font-size: $font-size-mobile;
+    }
+
+    .text-field-icon {
+        position: absolute;
+        bottom: 10px;
+        left: 15px;
+        font-size: 25px;
+    }
+}

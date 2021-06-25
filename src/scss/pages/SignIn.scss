@@ -1,0 +1,79 @@
+@import '../Theme.scss';
+@import '../Colors.scss';
+
+.container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    margin-top: 108px;
+    margin-bottom: 60px;
+    font-size: 64px;
+    font-weight: bold;
+    color: $text-primary;
+
+}
+
+.signin-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px 1px 50px;
+}
+
+.form-inputs-container {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.forgot-password-link {
+    text-transform: uppercase;
+    margin-top: 16px;
+}
+
+.btn-signin {
+    margin-top: 60px;
+
+}
+
+@media (min-width:1024px) {
+    .signin-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 50px 1px 50px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .signin-section {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 32px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .form-inputs-container {
+        height: 165px;
+    }
+
+    .forgot-password-link {
+        font-size: 12px;
+        margin-top: 8px;
+    }
+
+    .btn-signin {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,21 @@
+@import '../Theme.scss';
+@import '../Colors.scss';
+
+
+.btn-primary {
+    width: 100%;
+    padding: 27px 0 25px;
+    font-size: $font-size-desktop;
+    font-weight: 500;
+    color: $text-secondary;
+    border: none;
+    border-radius: $border-radius;
+    background-color: $btn-primary-bg-color;
+}
+
+@media (max-width: 1024px) {
+    .btn-primary {
+        padding: 13.5px 0 12.5px;
+        font-size: $font-size-mobile
+    }
+}

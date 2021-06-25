@@ -1,0 +1,11 @@
+@import '../Colors.scss';
+@import '../Theme.scss';
+
+.redirect-link {
+  display: block;
+  color: $secondary-color;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

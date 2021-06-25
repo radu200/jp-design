@@ -1,0 +1,11 @@
+.show-case {
+  max-width: 50%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+@media (max-width:1024px) {
+  .show-case {
+    max-width: 100%;
+  }
+}
